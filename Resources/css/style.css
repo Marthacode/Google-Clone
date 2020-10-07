@@ -1,3 +1,7 @@
+body{
+    padding: 0;
+    overflow: hidden;
+}
 .container{
     text-align: center;
     margin-top: 100px;
@@ -5,11 +9,16 @@
 
 .wrapper{
     width: 550px;
+    margin:0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-row-gap: 50px;
+    grid-row-gap: 30px;
     grid-column-gap:10px;
-    margin-left: 260px;
+    justify-content: end;
+}
+
+.logo {
+    margin: 30px auto;
 }
 
 .navbar{
@@ -19,18 +28,36 @@
 }
 
 .this img{
-    width: 25px;
+    max-width: 25px;
     border-radius: 20%;
+    margin-top: 20px;
+}
+.this i{
+    max-width: 25px;
+    border-radius: 20%;
+    margin-top: 20px;  
 }
 
 .this{
     width: 60px;
+    height: 60px;
     background: hsla(0, 6%, 91%, 0.952);
     border-radius: 50%;
+    margin: 0 auto;
+} 
+.each{
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+.each p{
+    font-size: 15px;
+    
 }
 
-.this:hover{
-    background-color: rgb(247, 233, 233);
+.each:hover{
+    background-color:hsla(0, 6%, 91%, 0.952);
 }
 
 #second{
@@ -61,6 +88,19 @@ i.fa-search{
    top: 13px;
    left: 20px;  
 }
+i.fa-ellipsis-v{
+display: none;
+position: absolute;
+top: -20px;
+right: 0;   
+}
+
+#hide{
+    display: none;
+}
+#hide:hover {
+    display: block;
+}
 
 #search{
     display: inline;
@@ -74,16 +114,13 @@ i.fa-search{
     width: 550px;
     height: 150px;
     border-radius: 20px; 
-    margin-left: 50px;
+    margin: 0 auto;
 }
-
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-
-    
     box-shadow: 0 0px 7px 0 rgba(180, 179, 179, 0.692), 0 6px 20px 0 rgba(182, 181, 181, 0.19);
     margin-left: 40px;
     color: black;
@@ -98,7 +135,6 @@ i.fa-search{
 }
 
 .dropdown-content li:hover {background-color: #f1f1f1}
-
 
 
 
